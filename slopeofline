@@ -1,0 +1,25 @@
+// This program will calculate the slope of a line.
+// Developer: Andrew Stumpf
+// Date: 4 February 2018
+     
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    	/* variable definition: */
+    	int m,x,b,y;
+     
+     	printf("Enter an Integer for m\n");
+    	scanf("%d", &m);
+    	printf("Enter an Integer for x\n");
+    	scanf("%d", &x);
+    	printf("Enter an Integer for b\n");
+    	scanf("%d", &b);
+     
+    	y = (m * x) + b;
+    	printf("Slope of a line is %d\n " , y );
+     
+    	if (y > 10)
+    		printf("Slope is over 10\n");
+    	return 0;
+    }
