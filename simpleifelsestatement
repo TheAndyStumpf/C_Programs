@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main() {
+ 
+	float x,y;
+	printf("Enter x value: \n");
+	scanf("%f", &x);
+	printf("Enter y value: \n");
+	scanf("%f", &y);
+ 
+	if(x < y) {
+		printf("Y is %f\n", y);
+	}
+	else
+	printf("X is %f\n", x);
+
+}
