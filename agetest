@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+	int age;
+	
+	printf("What is your age?\n");
+	scanf("%d", &age);
+	
+	if (age>=25) {
+		printf("You can drive, get a credit card, buy cigarettes, gamble, drink in Canada, drink, AND rent a car!");
+		}
+		else if (age>=21) {
+			printf("You can drive, get a credit card, buy cigarettes, gamble, drink in Canada, AND drink!");
+			}
+		else if (age>=19) {
+			printf("You can drive, get a credit card, buy cigarettes, gamble, AND drink in Canada!");
+			}
+		else if (age>=18) {
+			printf("You can drive AND get a credit card, buy cigarettes, and gamble!");
+		}
+		else if (age>=16) {
+			printf("You can drive a car!");
+		}
+	else {
+		printf("You're not even old enough to drive yet.");
+		}
+	return 0;
+}
