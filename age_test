@@ -8,9 +8,19 @@ int main ()
 	printf("What is your age?\n");
 	scanf("%d", &age);
 	
-	if (age>=25) {
-		printf("You can drive, get a credit card, buy cigarettes, gamble, drink in Canada, drink, AND rent a car!");
-		}
+	
+	if (age>=65) {
+		printf("You can retire and be happy.");
+	  	}
+	  	else if (age>=62) {
+			printf("You can start drawing Social Security."); 
+			}
+	  	else if (age>=59) {
+			printf("You can start drawing from your 401k."); 
+			}
+	  	else if (age>=25) {
+			printf("You can drive, get a credit card, buy cigarettes, gamble, drink in Canada, drink, AND rent a car!");
+			}
 		else if (age>=21) {
 			printf("You can drive, get a credit card, buy cigarettes, gamble, drink in Canada, AND drink!");
 			}
@@ -19,10 +29,10 @@ int main ()
 			}
 		else if (age>=18) {
 			printf("You can drive AND get a credit card, buy cigarettes, and gamble!");
-		}
+			}
 		else if (age>=16) {
 			printf("You can drive a car!");
-		}
+			}
 	else {
 		printf("You're not even old enough to drive yet.");
 		}
