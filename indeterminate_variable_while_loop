@@ -1,0 +1,49 @@
+// C code
+// This program will calculate the average of 3 exams for an indeterminate number of students.
+// Developer: Andy Stumpf
+// Date: 18 February 2018
+ 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+int main ()
+	{
+		/* variable definition: */
+		char StudentName[100], finish[100];
+		float ExamValue, Sum, Avg;
+		int students, exams, i;
+ 
+		/* initialize i */
+		i = 0;
+ 
+		/* replace for loop with while, go till i is not equal to 0 */
+		while (i == 0)
+			{
+				/* reset Sum to 0 */
+				Sum = 0.0;
+				printf("Enter Student Name \n");
+				scanf("%s", StudentName);
+ 
+				/* Nested Loop for Exams */
+				for (exams = 0; exams <3; exams++)
+					{
+						printf("Enter exam grade: \n");
+						scanf("%f",&ExamValue);
+						Sum+=ExamValue;
+					}
+				Avg = Sum/3.0;
+				printf("Average for %s is %f\n",StudentName,Avg);
+ 
+				/* Ask for input on whether to continue */
+				printf("Do you want to continue, Yes or No \n");
+				scanf("%s", &finish);
+ 
+				/* String compare to determine if user wants to quit */
+				if (strcmp(finish, "no") == 0)
+					{
+						i = 1;
+					}
+				}
+		return 0;
+	}
