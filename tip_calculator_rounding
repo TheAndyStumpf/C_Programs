@@ -1,0 +1,27 @@
+// A tip calculator that rounds the result to the nearest whole integer.
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "math.h"
+
+int main() {
+  
+  /* Define variables */
+  int tip_percent;
+  float tip, bill;
+  
+  /* Initialize variables */
+  tip_percent = 15;
+  
+  /*Inquire input from the user */
+  printf("How much was the bill?\n");
+  scanf("%f", &bill);
+  
+  /* Calculate the tip */
+  tip = (bill * tip_percent) / 100;
+  
+  printf("You owe the wait staff %f.\n", round(tip));
+  
+  exit(EXIT_SUCCESS);
+}
