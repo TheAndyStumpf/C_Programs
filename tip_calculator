@@ -13,7 +13,7 @@ int main() {
   /* Initialize variables */
   tip_percent = 15;
   
-  /*Inquire input from the user */
+  /* Inquire input from the user */
   printf("How much was the bill?\n");
   scanf("%f", &bill);
   
