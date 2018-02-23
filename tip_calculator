@@ -1,0 +1,26 @@
+// A simple tip calculator for 15% of the total.
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+
+int main() {
+  
+  /* Define variables */
+  int tip_percent;
+  float tip, bill;
+  
+  /* Initialize variables */
+  tip_percent = 15;
+  
+  /*Inquire input from the user */
+  printf("How much was the bill?\n");
+  scanf("%f", &bill);
+  
+  /* Calculate the tip */
+  tip = (bill * tip_percent) / 100;
+  
+  printf("You owe the wait staff %f.\n", tip);
+  
+  exit(EXIT_SUCCESS);
+}
